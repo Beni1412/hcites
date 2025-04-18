@@ -3,6 +3,7 @@ body {
   background-color: #f2ffe6;
   text-align: center;
   padding: 40px;
+  transition: background-color 0.5s ease;
 }
 
 h1 {
@@ -32,6 +33,13 @@ p {
   background-color: #fff;
   border-radius: 20px;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.qr-box:hover {
+  transform: scale(1.05);
+  background-color: #eafff5;
+  cursor: pointer;
 }
 
 .qr-text {
@@ -47,6 +55,20 @@ p {
 .maskot {
   width: 200px;
   height: auto;
+  animation: goyang 2s infinite ease-in-out;
+}
+
+@keyframes goyang {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
 }
 
 .instructions {
@@ -68,4 +90,84 @@ p {
 
 .instructions li {
   margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: #c1fba4;
+  padding: 15px;
+  border-radius: 10px;
+  color: #1b4332;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#speaker-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #c1fba4;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#speaker-btn:hover {
+  background-color: #a3e4a2;
+}
+/* Tombol ganti tema */
+#theme-btn {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  background-color: #ffd6e0;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#theme-btn:hover {
+  background-color: #ffb6c1;
+}
+
+/* Tema Pink */
+.pink-theme {
+  background-color: #ffe6f0;
+}
+
+.pink-theme h1 {
+  color: #d63384;
+}
+
+.pink-theme p {
+  color: #772953;
+}
+
+.pink-theme .qr-box {
+  border-color: #d63384;
+}
+
+.pink-theme .qr-text {
+  color: #d63384;
+}
+
+.pink-theme .instructions {
+  background-color: #ffd6e0;
+}
+
+.pink-theme .instructions h2 {
+  color: #a31c5c;
+}
+
+.pink-theme footer {
+  background-color: #ffb6c1;
+  color: #8b2c5a;
 }
