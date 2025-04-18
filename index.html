@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- AUDIO -->
+    <audio id="bg-music" autoplay>
+      <source src="song/S1.mp3" type="audio/mp3" />
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+    <!-- TOMBOL SPEAKER -->
+    <button id="speaker-btn" title="Hidupkan/Matikan Musik">🔇</button>
+    <!-- TOMBOL GANTI TEMA -->
+    <button id="theme-btn" title="Ganti Tema">🎨</button>
+
     <h1>Kebun Binatang Virtual</h1>
     <p>
       Scan kotak di bawah ini untuk mulai menjelajahi dunia binatang secara
@@ -14,17 +25,15 @@
 
     <div class="qr-container">
       <img
-        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif"
+        src="https://media.giphy.com/media/VM1fcpu2bKs1e2Kdbj/giphy.gif"
         alt="Maskot Kiri"
         class="maskot kiri"
       />
-
       <div class="qr-box">
         <div class="qr-text">[ QR Code<br />akan muncul di sini ]</div>
       </div>
-
       <img
-        src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif"
+        src="https://media.giphy.com/media/VM1fcpu2bKs1e2Kdbj/giphy.gif"
         alt="Maskot Kanan"
         class="maskot kanan"
       />
@@ -43,6 +52,12 @@
         menggunakan link langsung sementara.
       </p>
     </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Kebun Binatang Virtual - Belajar dan bermain bersama hewan!
+      </p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
